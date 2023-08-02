@@ -27,7 +27,7 @@ namespace BBSFW.Model
 			MotorTemperatureSensor
 		}
 
-		
+
 		public static int GetByteSize(int version)
 		{
 			switch (version)
@@ -113,7 +113,7 @@ namespace BBSFW.Model
 					case BbsfwConnection.Controller.BBSHD:
 						return 33;
 					case BbsfwConnection.Controller.BBS02:
-						return 30;
+						return 33;
 					case BbsfwConnection.Controller.TSDZ2:
 						return 20;
 				}
@@ -142,7 +142,7 @@ namespace BBSFW.Model
 		// speed sensor
 		public float WheelSizeInch;
 		public uint NumWheelSensorSignals;
-		
+
 		// pas options
 		public uint PasStartDelayPulses;
 		public uint PasStopDelayMilliseconds;
